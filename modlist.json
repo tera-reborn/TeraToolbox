@@ -9,8 +9,8 @@
             "niceName": "Anti Body Block",
             "guiName": "ABB"
         },
-        "servers": ["https://raw.githubusercontent.com/OmikamiMiko/AntiBodyBlock/main/"],
-        "supportUrl": "https://github.com/OmikamiMiko/AntiBodyBlock/issues"
+        "servers": ["https://raw.githubusercontent.com/tera-reborn/AntiBodyBlock/main/"],
+        "supportUrl": "https://github.com/tera-reborn/AntiBodyBlock/issues"
     },
     {
         "disableAutoUpdate": false,
@@ -22,8 +22,8 @@
             "niceName": "Skill Prediction",
             "guiName": "Next-Gen Skill Prediction"
         },
-        "servers": ["https://raw.githubusercontent.com/OmikamiMiko/NGSP/master/"],
-        "supportUrl": "https://github.com/OmikamiMiko/NGSP/issues",
+        "servers": ["https://raw.githubusercontent.com/tera-reborn/NGSP/master/"],
+        "supportUrl": "https://github.com/tera-reborn/NGSP/issues",
         "conflicts": [
             "skill-prediction",
             "skill-prediction-master",
@@ -32,5 +32,91 @@
             "ngsp-100-master",
             "ngsp-master"
         ]
+    },
+    {
+        "disableAutoUpdate": false,
+        "name": "fps-manager",
+        "options": {
+            "cliName": "FPM",
+            "guiName": "FPS Manager",
+            "settingsVersion": 1,
+            "settingsFile": "./settings/settings.json",
+            "settingsMigrator": "./data/migrationData.js"
+        },
+        "author": "SaltyMonkey",
+        "description": "FPS Manager is modern and extremely customizable module for Tera Toolbox which can help to solve annoyance by some ingame messages and fps drops.",
+        "servers": ["https://raw.githubusercontent.com/tera-reborn/fps-manager/master/"],
+        "supportUrl": "https://github.com/tera-reborn/fps-manager/issues",
+        "conflicts": ["fps-utils"]
+    },
+    {
+        "name": "instant-everything",
+        "author": "Caali / Pinkie Pie / m0py / Snug / beng",
+        "description": "Removes the annoying animation and skips the progress bar for enchanting, upgrading, soulbinding, dismantling, and merging items.",
+        "version": "1.0",
+        "servers": ["https://raw.githubusercontent.com/tera-reborn/instant-everything/master/"],
+        "options": {
+            "cliName": "InstantEverything",
+            "guiName": "InstantEverything",
+            "settingsVersion": 1,
+            "settingsFile": "config.json",
+            "settingsMigrator": "settings_migrator.js"
+        },
+        "conflicts": ["instant-enchant", "instant-upgrade", "instant-soulbind", "instant-dismantle", "instant-merge"]
+    },
+    {
+        "name": "bugfix",
+        "author": "Caali / Pinkie Pie",
+        "description": "Collection of mods that fix some of the most severe client bugs in TERA.",
+        "version": "1.0",
+        "options": {
+            "cliName": "Bugfix",
+            "guiName": "Bugfix"
+        },
+        "servers": ["https://raw.githubusercontent.com/tera-reborn/bugfix/master/"],
+        "conflicts": ["swim-fix", "chat-sanitizer"]
+    },
+    {
+        "name": "skill-resets",
+        "author": "Caali / SaltyMonkey / eemj",
+        "description": "Pops up an on-screen message whenever a skill's cooldown is reset.",
+        "version": "2.0",
+        "options": {
+            "cliName": "SkillResets",
+            "guiName": "Skill Resets",
+            "settingsVersion": 3,
+            "settingsFile": "config.json",
+            "settingsMigrator": "settings_migrator.js"
+        },
+        "servers": ["https://raw.githubusercontent.com/tera-reborn/skill-resets/master/"]
+    },
+    {
+        "name": "true-everful-nostrum",
+        "author": "Caali",
+        "description": "Ensures that your Elite/Tera Club Everful Nostrum/Noctenium is up 100% of the time.",
+        "version": "2.2",
+        "options": {
+            "cliName": "TEN",
+            "guiName": "True Everful Nostrum",
+            "settingsVersion": 3,
+            "settingsFile": "config.json",
+            "settingsMigrator": "settings_migrator.js"
+        },
+        "servers": ["https://raw.githubusercontent.com/tera-reborn/true-everful-nostrum/master/"]
+    },
+        {
+        "name": "camera-control",
+        "author": "Caali",
+        "description": "Configure or disable camera shaking effects. Change camera FOV (field of view) and distance. Settings accessible by typing `/toolbox camera` in chat.",
+        "version": "1.0",
+        "options": {
+            "cliName": "Camera Control",
+            "guiName": "Camera Control",
+            "settingsVersion": 2,
+            "settingsFile": "config.json",
+            "settingsMigrator": "settings_migrator.js"
+        },
+        "servers": ["https://raw.githubusercontent.com/tera-reborn/camera-control/master/"],
+        "conflicts": ["shaker"]
     }
 ]
