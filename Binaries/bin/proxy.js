@@ -15,7 +15,7 @@ function PublisherFromLanguage(language) {
         case 'THA':
         case 'TW':
         case 'USA':
-            return 'VKY';
+            return 'AR';
         default:
             throw new Error(`Invalid language "${language}"!`);
     }
